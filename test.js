@@ -87,7 +87,7 @@ body{
     border-right: transparent;
     transform: rotate(-15deg);
 }
-.mouth > .lip >.right{
+.mouth > .lip > .right{
     z-index: 1;
     background: rgb(255, 229, 0);
     border: 3px solid black;
@@ -136,7 +136,7 @@ body{
     border: 2px solid black;
     height: 120px;
     width: 120px;
-    background: rgb(235, 1, 3);
+    background: rgb(255, 81, 64);
     border-radius: 50%;
     position: fixed;
     top: 300px;
@@ -148,6 +148,88 @@ body{
 }
 .face.right{
     transform: translateX(200px);
+}
+.ear{
+    border: 3px solid black;
+    width: 75px;
+    height: 250px;
+    border-radius: 75px/250px;
+    position: fixed;
+    left: 50%;
+    margin-left: -37.5px;
+}
+.ear.left{
+    transform: translateX(-270px) rotate(-30deg);
+    overflow: hidden;
+}
+.ear.right{
+    transform: translateX(270px) rotate(30deg);
+    overflow: hidden;;
+}
+.ear.left::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 90px;
+    border-radius: 60px/60px;
+    background:black;
+}
+.ear.right::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 90px;
+    border-radius: 60px/60px;
+    background:black;
+}
+.yuan{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    margin-left: -25px;
+    top: 200px;
+    background: rgb(255, 229, 0);
+}
+.yuan.left{
+    transform: translateX(-215px);
+}
+.yuan.right{
+    transform: translateX(215px);
+}
+.tail.down{
+    position: fixed;
+    top: 450px;
+    right: 20%;
+    width: 130px;
+    height: 80px;
+    border: 3px solid black;
+    transform: skewY(15deg);
+}
+
+.tail.up{
+    position: fixed;
+    top: 400px;
+    right: 11%;
+    width: 160px;
+    height: 100px;
+    border: 3px solid black;
+    transform: skewY(15deg);
+    z-index: 3;
+    background: rgb(255, 229, 0);
+}
+.yuan.down{
+    width: 60px;
+    height: 120px;
+    transform: translateX(280px) translateY(210px) rotate(35deg);
+}
+.yuan.up{
+    border-radius: 0;
+    transform: translateX(392px) translateY(264.5px) skewY(15deg);
+    width: 40px;
+    height: 30px;
+    z-index: 4;
 }
 `
 
