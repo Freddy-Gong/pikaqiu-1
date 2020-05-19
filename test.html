@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+</head>
+
+<body>
+    <style id="demo"></style>
+    <div id="demo2"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        #buttons {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            right: 0;
+            top: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        #buttons>button {
+            padding: 4px 8px;
+            margin-bottom: 10px;
+        }
+
+        #demo {
+            display: none;
+        }
+
+        #demo2 {
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow-y: auto;
+            /*对于js来说有没有滚动条都可以滚动*/
+        }
+
+        #demo2::-webkit-scrollbar {
+            display: none;
+        }
+
+        #html {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+        }
+    </style>
+    <div id="html">
+        <div class="eyes left"></div>
+        <div class="eyes right"></div>
+        <div class="nose"></div>
+        <div class="mouth">
+            <div class="lip">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="down">
+                <div class="tongue"></div>
+            </div>
+        </div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="arm"></div>
+        <div class="arm"></div>
+        <div class="ball"></div>
+    </div>
+    <script src="./test.js"></script>
+</body>
+
+</html>
